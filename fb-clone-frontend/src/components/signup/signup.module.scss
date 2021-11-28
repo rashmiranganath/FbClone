@@ -1,0 +1,75 @@
+.ReactModal__Body--open {
+  position: relative;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.modal {
+  border: 1px solid #cccccc;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  background: white;
+  top: 0;
+  z-index: -1;
+  width: 432px;
+  .signUpHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    h2 {
+      color: #1c1e21;
+      font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 0;
+    }
+    h5 {
+      color: #606770;
+      font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 24px;
+      margin: 0;
+    }
+    button {
+      position: absolute;
+      right: 0;
+      top: 10%;
+      border: none;
+      background-color: transparent;
+      font-size: 29px;
+      color: grey;
+    }
+  }
+  .inputContainer {
+    input {
+      width: 100%;
+      font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 16px;
+      padding: 12px;
+    }
+  }
+  .inputSubContainer {
+    display: flex;
+    input {
+      width: 50%;
+      font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 16px;
+      padding: 12px;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.mainConatiner {
+  padding: 7rem 0 4.5rem;
+  width: 100%;
+  section {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+    display: flex;
+    .logoContainer {
+      padding: 7rem 0 1rem;
+      img {
+        height: 106px;
+        margin: -1.75rem;
+      }
+      h2 {
+        font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        font-size: 28px;
+        font-weight: normal;
+        line-height: 32px;
+        width: 500px;
+      }
+    }
+    .signInContainer {
+      align-items: center;
+      background-color: #fff;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      margin: 40px 0 0;
+      padding: 20px 0 28px;
+      width: 396px;
+      .inputContainer {
+        padding: 6px 0;
+
+        input {
+          border: 1px solid #dddfe2;
+          color: #1d2129;
+          font-family: Helvetica, Arial, sans-serif;
+          font-size: 12px;
+          height: 22px;
+          line-height: 16px;
+          vertical-align: middle;
+          font-size: 17px;
+          padding: 14px 16px;
+          width: 80%;
+          display: flex;
+          margin: 0 auto;
+          border-radius: 6px;
+        }
+      }
+      .loginBtn {
+        background-color: #1877f2;
+        border: none;
+        border-radius: 6px;
+        font-size: 20px;
+        line-height: 48px;
+        padding: 0 16px;
+        width: 88%;
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        align-items: center;
+        justify-content: center;
+      }
+      .forgetPassword {
+        margin-top: 10px;
+        color: #1877f2;
+        font-size: 16px;
+        text-align: center;
+        a {
+          text-decoration-line: none;
+        }
+      }
+      hr {
+        align-items: center;
+        border-bottom: 1px solid #dadde1;
+        display: flex;
+        margin: 20px 16px;
+        text-align: center;
+      }
+      .createNewAccount {
+        border: none;
+        border-radius: 6px;
+        font-size: 17px;
+        line-height: 48px;
+        padding: 0 16px;
+        background-color: #42b72a;
+        color: white;
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+  }
+}
