@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./login.module.scss";
-import { Link, withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loginAction } from "../../Actions/login";
 import Signup from "../signup/index";
@@ -8,6 +8,7 @@ import Signup from "../signup/index";
 const Login = (props) => {
   const dispatch = useDispatch();
   const userData = useSelector((state) => state.userData);
+
   console.log("user", userData);
 
   const [userInfo, setUserInfo] = useState({
@@ -28,12 +29,12 @@ const Login = (props) => {
   };
 
   const navigateToSignup = () => {
-    return openModal(true);
+    return openModal(!modal);
   };
 
   return (
     <div className={styles.mainConatiner}>
-      {modal && <Signup />}
+      {modal && <Signup open={modal} />}
       <section>
         <div className={styles.logoContainer}>
           <img

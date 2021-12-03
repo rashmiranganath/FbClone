@@ -6,6 +6,7 @@ import userPostRoutes from "./routes/userPostRoutes.js";
 
 const app = express();
 app.use(express.json());
+express.urlencoded({ extended: false });
 app.use(cors());
 
 app.use("/fb", loginRoutes);

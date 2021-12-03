@@ -1,9 +1,21 @@
 import express from "express";
 import { postUserUploads } from "../controller/userPostController.js";
+import multer from "multer";
 
-console.log("routes");
 const router = express.Router();
 
-router.post("/home/uploadImg", postUserUploads);
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "uploads/");
+  },
+  filename: (req, file, cb) => {
+    cb(null, Date.now() + "-" + file.originalname);
+  },
+});
+
+console.log("routes");
+const upload = multer({ storage });
+
+router.post("/home/uploadImg", upload.single("img"), postUserUploads);
 
 export default router;

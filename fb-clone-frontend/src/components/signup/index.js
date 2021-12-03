@@ -66,7 +66,7 @@ const Signup = () => {
           <input
             name="email"
             value={userInfo.email}
-            placeholder="email"
+            placeholder="Email"
             onChange={(e) => userInfoHandler(e)}
           ></input>
         </div>
@@ -74,7 +74,7 @@ const Signup = () => {
           <input
             name="password"
             value={userInfo.password}
-            placeholder="password"
+            placeholder="Password"
             onChange={(e) => userInfoHandler(e)}
           ></input>
         </div>
@@ -82,7 +82,7 @@ const Signup = () => {
           <input
             name="dob"
             value={userInfo.dob}
-            placeholder="dob"
+            placeholder="Date of Birth"
             onChange={(e) => userInfoHandler(e)}
           ></input>
         </div>
@@ -90,12 +90,14 @@ const Signup = () => {
           <input
             name="gender"
             value={userInfo.gender}
-            placeholder="gender"
+            placeholder="Gender"
             onChange={(e) => userInfoHandler(e)}
           ></input>
         </div>
 
-        <button onClick={userInfoOnSubmit}>login</button>
+        <button onClick={userInfoOnSubmit} className={styles.submitBtn}>
+          login
+        </button>
       </Modal>
     </div>
   );

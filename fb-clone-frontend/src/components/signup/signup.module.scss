@@ -42,6 +42,7 @@
       font-size: 15px;
       line-height: 24px;
       margin: 0;
+      margin: 10px 0;
     }
     button {
       position: absolute;
@@ -55,21 +56,38 @@
   }
   .inputContainer {
     input {
-      width: 100%;
+      width: 94%;
       font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
       font-size: 15px;
       line-height: 16px;
       padding: 12px;
+      margin: 10px 0;
     }
   }
   .inputSubContainer {
     display: flex;
+    justify-content: space-between;
     input {
-      width: 50%;
+      width: 42%;
       font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
       font-size: 15px;
       line-height: 16px;
       padding: 12px;
+      margin: 10px 0;
     }
+  }
+  .submitBtn {
+    background: none;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
   }
 }
